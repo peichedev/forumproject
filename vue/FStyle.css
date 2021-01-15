@@ -6,7 +6,7 @@ body
 
 /*header*/
 
-ul 
+#menuuser
 {
     list-style-type: none;
     margin: 0px;
@@ -18,10 +18,9 @@ ul
     overflow: auto;
     display: flex;
     flex-direction: column-reverse;
-    
 }
 
-li a 
+#bouttonmenu a 
 {
     display: block;
     color: #000;
@@ -29,7 +28,37 @@ li a
     text-decoration: none;
 }
 
-li a:hover {
+#bouttonmenu a:hover {
     background-color: #555;
     color: white;
 }
+
+.avatar
+{
+    width: 130px;
+    height: 130px;
+}
+
+#totalmenu
+{
+    display: flex;
+}
+
+#navmenu
+{
+    width: 100%;
+    height: 8%;
+    background-color: #f1f1f1;
+    display:flex;
+    flex-direction: row;
+    padding-left: 50%;
+}
+
+#imgforum
+{
+    height: 80px;
+    width: 240px;
+    margin: 0;
+}
+
+/*Footer*/
