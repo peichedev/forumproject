@@ -10,14 +10,38 @@
 <header>
     <div id='totalmenu'>
         <nav id='navmenuuser'>
-            <div>
-                    
+            <div>                   
             </div>
-
             <ul id='menuuser'>
-                <li id='bouttonmenu'><a href=#>Déconnexion</a></li>
-                <li id='bouttonmenu'><a href=#>log in</a></li>
+                <li id='bouttonmenu'><a href=index.php?deconnexion=true>Déconnexion</a></li>
+                <li src= 'login.php'id='bouttonmenu'><a href=model/login.php>login </a></li>
                 <li><a href=#> <img src="img/avatar.png" class='avatar' alt=""></a></li>
+                <li>                   
+                    <?php
+                        ini_set('display_errors','off');/*cache erreur username quand hors-ligne si vous etes chaud en php pour la reparer*/
+                        session_start();
+                        if(isset($_GET['deconnexion']))
+                        { 
+                           if($_GET['deconnexion']==true)
+                           {  
+                              session_unset();
+                              header("location:index.php");
+                           }
+                        }
+                        else if($_SESSION['username'] !== "")   
+                        {
+                            $user = $_SESSION['username'];
+                            if(isset($user))
+                            {
+                                echo "<br>Bonjour $user vous etes en ligne;";
+                            }
+                            else
+                            {
+                                echo "Bonjour, vous etes hors-ligne";
+                            }
+                        }
+                    ?>                       
+                </li>
             </ul>
         </nav>
     
