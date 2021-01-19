@@ -7,15 +7,12 @@
     <body>
         <div id="container">          
 		<form action="action.php" method="post">
-
         <h2>Nouveau compte</h2>
-			<p>nom : <input type="text" name="nom" /></p>
-			<p>Prenom : <input type="text" name="age" /></p>
 			<p>pseudo : <input type="text" name="pseudo" /></p>
 			<p>Mots de Passe : <input type="text" name="mdp" /></p>
 			<p>email : <input type="text" name="mail" /></p>
 			<p><input type="submit" value="OK"></p>
-			<a href='login.php'>retour</a>
+			<p><a href='login.php'>retour</a></p>
 		</form>
         </div>
     </body>
