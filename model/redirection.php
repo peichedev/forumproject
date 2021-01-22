@@ -25,7 +25,7 @@
         {
           ?>
           <ul id='menuuer'>
-            <li src= 'login.php'id='bouttonmenu'><a href=model/login.php>login </a></li>
+            <li src= 'login.php'id='bouttonmenu'><a href=vue/login.php>login </a></li>
           </ul>
           <?php
             echo "Bonjour, vous etes hors-ligne";
