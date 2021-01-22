@@ -17,7 +17,7 @@ body
     position: fixed;
     overflow: auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 #bouttonmenu a 
@@ -35,8 +35,7 @@ body
 
 .avatar
 {
-    width: 130px;
-    height: 130px;
+    width: 100%;
 }
 
 #totalmenu
@@ -59,10 +58,10 @@ body
 
 #imgforum
 {
-    height: 80px;
-    width: 240px;
+    height: 8%;
+    width: 14%;
     margin: 0;
-    position: relative;
+    position: absolute;
 }
 
 /*Footer*/
@@ -126,4 +125,10 @@ input[type=submit]:hover {
     height: 30px;
     border-radius: 30px;
     cursor: pointer;
+}
+
+#recherche
+{
+    width: 100%;
+    height: 100%;
 }
