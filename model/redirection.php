@@ -18,7 +18,7 @@
           <ul id='menuuer'>
             <li id='bouttonmenu'><a href=index.php?deconnexion=true>Déconnexion</a></li>
           </ul>
-          <?php
+          <?php 
             echo "<br>Bonjour $user vous etes en ligne";
         }
         else
