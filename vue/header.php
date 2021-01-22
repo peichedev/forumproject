@@ -27,8 +27,10 @@
                         {
                             var a = document.getElementById("search").value;
 
-                            if (a === "le mot a marquer") {
-                                window.open("l'id de la recherche");
+                            if (a === "gta") 
+                            {
+                                $_get['a'];
+                                header('Location: ../model/recherche_discution');
                             }
 
                             if (a === "le mot a marquer") {
