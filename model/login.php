@@ -1,12 +1,10 @@
 <html>
     <head>
        <meta charset="utf-8">
-        <!-- importer le fichier de style -->
         <link rel="stylesheet" href="../vue/style.css" media="screen" type="text/css" />
     </head>
     <body>
-        <div id="container">
-            
+        <div id="container">           
             <form action="verification.php" method="POST">
                 <h1>Connexion</h1>
                 

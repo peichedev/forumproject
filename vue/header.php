@@ -13,8 +13,6 @@
             <div>                   
             </div>
             <ul id='menuuser'>
-                <li id='bouttonmenu'><a href=index.php?deconnexion=true>Déconnexion</a></li>
-                <li src= 'login.php'id='bouttonmenu'><a href=model/login.php>login </a></li>
                 <li><a href=#> <img src="img/avatar.png" class='avatar' alt=""></a></li>
                 <li> <?php require ('model/redirection.php');?>                 
                 </li>
