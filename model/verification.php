@@ -7,9 +7,8 @@
     $password = sha1(htmlspecialchars($_POST['password']));  
     if($username !== "" && $password !== "")
     {
-      $requete = "SELECT count(*) FROM users where pseudo = '".$username."' and mdp = '".$password."' ";
-      $exec_requete = mysqli_query($db,$requete);
-      $reponse      = mysqli_fetch_array($exec_requete);
+      $requete = $db->prepare ('SELECT count(*) FROM users where pseudo = ? and mdp = ? ');
+      $requete->execute(array($username,$password));
       $count = $reponse['count(*)'];
       if($count!=0)
       {

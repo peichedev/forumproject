@@ -6,7 +6,7 @@
     </head>
     <body>
         <div id="container">          
-		<form action="inscription.php" method="post">
+		<form action="../model/inscription.php" method="post">
         <h2>Nouveau compte</h2>
 			<p>pseudo : <input type="text" name="pseudo" /></p>
 			<p>Mots de Passe : <input type="text" name="mdp" /></p>
