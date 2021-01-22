@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<?php
+    $baseurl=$baseurl = 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'].dirname($_SERVER['REQUEST_URI'] . 'lol');
+
+?>
+
+
 	<title>ForumPAD</title>
 	<meta charset='utf-8'>
-    <link href="../style/style.css" rel="stylesheet">
+    <link href="<?php echo $baseurl; ?>/style/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -13,6 +19,7 @@
             <div>                   
             </div>
             <ul id='menuuser'>
+            
                 <li><a href=#> <img src="img/avatar.png" class='avatar' alt=""></a></li>
                 <li> <?php require ('model/redirection.php');?>                 
                 </li>
