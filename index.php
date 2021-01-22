@@ -6,7 +6,5 @@ require('model/supercontroler.php');
 
 
 
-
-
 require('vue/footer.php');
 ?>
