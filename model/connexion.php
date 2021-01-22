@@ -5,5 +5,5 @@
     $db_name     = 'forum';
     $db = new PDO($dsn, $db_username, $db_password)
   	or die('could not connect to database');
-	/*$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);*/
+
 ?>
