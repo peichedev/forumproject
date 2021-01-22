@@ -8,7 +8,7 @@
 		<form action="../model/inscription.php" method="post">
         <h2>Nouveau compte</h2>
 			<p>pseudo : <input type="text" name="pseudo" /></p>
-			<p>Mots de Passe : <input type="text" name="mdp" /></p>
+			<p>Mots de Passe : <input type="password" name="mdp" /></p>
 			<p>email : <input type="text" name="mail" /></p>
 			<p><input type="submit" value="OK"></p>
 			<p><a href='login.php'>retour</a></p>

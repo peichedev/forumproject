@@ -22,7 +22,9 @@
                         echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
                 }
                 ?>
-                <a href='formulaire.php'>cree un compte</a><!--crée formulaire -->
+                <a href='formulaire.php'>cree un compte</a>
+                <br><!--crée formulaire -->
+                <a href='../index.php'>retour</a>
             </form>
         </div>
     </body>

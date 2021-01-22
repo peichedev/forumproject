@@ -1,21 +1,22 @@
 <?php
-	$new_user=$_POST['pseudo'];
-	$adress_mail=$_POST['mail'];
-	$mdp=$_POST['mdp'];
+	$new_user=htmlspecialchars($_POST['pseudo']);
+	$adress_mail=htmlspecialchars($_POST['mail']);
+	$mdp=password_hash($_POST['mdp'],PASSWORD_DEFAULT);
+	$email=htmlspecialchars($_POST['mail']);
 
 	require('connexion.php');
-	$sql = "INSERT INTO users (id,pseudo, email , mdp)
-	VALUES (null,".$new_user",".$adress_mail",".$mdp")";
 
-	if ($conn->query($sql) === TRUE) 
+	$sql= $db->prepare ('INSERT INTO users (pseudo, email , mdp)
+	VALUES (?,?,?)');
+  	$sql->execute(array($new_user,$email,$mdp));
+  	$results = $sql->fetchAll();
+
+	if (isset($results))
 	{
-	  echo "bienvenue";
+	  header('Location: ../vue/login.php');	  
 	} 
 	else 
 	{
 	  echo "Erreur: " . $sql . "<br>" . $conn->error;
 	}
-
-	$conn->close();
-
 ?>
