@@ -3,7 +3,7 @@
 <head>
 	<title>ForumPAD</title>
 	<meta charset='utf-8'>
-    <link href="FStyle.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
 
 </head>
 <body>
