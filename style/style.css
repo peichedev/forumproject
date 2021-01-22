@@ -42,6 +42,9 @@ body
 #totalmenu
 {
     display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 #navmenu
@@ -66,7 +69,7 @@ body
 /*login*/
 
 body{
-    background: #67BE4B;
+    background:#555B;
 }
 #container{
     width:400px;
@@ -106,4 +109,20 @@ input[type=submit]:hover {
     background-color: white;
     color: #53af57;
     border: 1px solid #53af57;
+}
+
+/*bare de recherche*/
+#search 
+{
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+#button 
+{
+    background-color: aqua;
+    border: 0px solid black;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
 }
