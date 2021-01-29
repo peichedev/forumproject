@@ -1,4 +1,5 @@
 <?php
+  
   session_start();
   if(isset($_POST['username']) && isset($_POST['password']))
   {
@@ -7,7 +8,7 @@
     $password = sha1(htmlspecialchars($_POST['password']));  
     if($username !== "" && $password !== "")
     {
-      $requete = $db->prepare ('SELECT count(*) FROM users where pseudo = ? and mdp = ? ');
+      $requete = $bdd->prepare ('SELECT count(*) FROM users where pseudo = ? and mdp = ? ');
       $requete->execute(array($username ,$password));
       $results = $requete->fetchAll();
       if($results!=0)
