@@ -2,49 +2,50 @@
 <html>
 <head>
 <?php $baseurl=$baseurl = 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'].dirname($_SERVER['REQUEST_URI'] . 'lol'); ?>
-	<title>ForumPAD</title>
-	<meta charset='utf-8'>
+    <title>ForumPAD</title>
+    <meta charset='utf-8'>
     <link href="<?php echo $baseurl; ?>/style/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div id='totalmenu'>
-        <nav id='navmenuuser'>
-            <ul id='menuuser'>
-                <li><a href=#> <img src="style/avatar.png" class='avatar' alt=""></a></li>
-                <li> <?php require ('model/redirection.php');?>  </li>
-            </ul>
-        </nav>
+    <header>
+        <div id='totalmenu'>
+            <nav id='navmenuuser'>
+                <ul id='menuuser'>
+                    <a href=#> <img src="style/avatar.png" class='avatar' alt=""></a>
+                    <?php require ('model/redirection.php');?> 
+                </ul>
+            </nav>
 
-        <nav id='navmenu'>
-            <a href="index.php"><img id='imgforum' src='style/forum.jpg'></a>
-            <ul id='navmenu'>
-                <li id="recherche">
-                    <input type="search" id="search" value="" onchange="ouvrirPage()">
-                    <input type="button" id="button" onclick="ouvrirPage()" value="Chercher">
-                    <script>
-                        function ouvrirPage() 
-                        {
-                            var a = document.getElementById("search").value;
-
-                            if (a === "gta") 
+            <nav id='navmenu'>
+                <a href="index.php"><img id='imgforum' src='style/forum.jpg'></a>
+                <ul id='navmenu'>
+                    <li id="recherche">
+                        <input type="search" id="search" value="" onchange="ouvrirPage()">
+                        <input type="button" id="button" onclick="ouvrirPage()" value="Chercher">
+                        <script>
+                            function ouvrirPage() 
                             {
-                                $_get['a'];
-                                header('Location: ../model/recherche_discution');
-                            }
+                                var a = document.getElementById("search").value;
 
-                            if (a === "le mot a marquer") {
-                                window.open("l'id de la recherche");
-                            }
+                                if (a === "gta") 
+                                {
+                                    $_get['a'];
+                                    header('Location: ../model/recherche_discution');
+                                }
 
-                            if (a === "le mot a marquer") {
-                                window.open("l'id de la recherche");
+                                if (a === "le mot a marquer") {
+                                    window.open("l'id de la recherche");
+                                }
+
+                                if (a === "le mot a marquer") {
+                                    window.open("l'id de la recherche");
+                                }
                             }
-                        }
-                    </script>
-                </li>
-            </ul>
-        </nav>
-        
-    </div>
-</header>
+                        </script>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+</body>
