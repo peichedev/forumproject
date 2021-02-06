@@ -8,7 +8,13 @@
         <main>
             <div class="main">
                 <button class="button_categorie">
-                    <a href="#">catégorie</a>                    
+                    <?php if(isset($user)) { ?>
+                    <a href="vue/cree_discu.php?log=1">nouvelle discution</a> <?php }
+                    else
+                    { ?>
+                        <a href="vue/cree_discu.php?log=2">nouvelle discution</a>
+                    <?php } ?>  
+
                 </button>
             </div>
             &nbsp;

@@ -1,7 +1,7 @@
 <?php
 	$new_user=htmlspecialchars($_POST['pseudo']);
 	$adress_mail=htmlspecialchars($_POST['mail']);
-	$mdp=sha1(password_hash($_POST['mdp'],PASSWORD_DEFAULT));
+	$mdp=sha1($_POST['mdp'],PASSWORD_DEFAULT);
 	$email=htmlspecialchars($_POST['mail']);
 
 	
