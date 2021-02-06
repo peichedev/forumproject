@@ -13,10 +13,12 @@
     else if($_SESSION['username'] !== "")   
     {
         $user = $_SESSION['username'];
+        $_SESSION['pseudo']=$user;
         if(isset($user))
         {
           ?>
           <ul id='menuuer'>
+            <li id='bouttonmenu'><a href=vue/modif_profil.php?enligne=1>Mon profil</a></li>
             <li id='bouttonmenu'><a href=index.php?deconnexion=true>Déconnexion</a></li>
           </ul>
           <?php 
