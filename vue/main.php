@@ -12,7 +12,7 @@
                     <a href="vue/cree_discu.php?log=1">nouvelle discution</a> <?php }
                     else
                     { ?>
-                        <a href="vue/cree_discu.php?log=2">nouvelle discution</a>
+                        <p> Connecter vous pour cree une nouvelle discu</p>
                     <?php } ?>  
 
                 </button>

@@ -21,8 +21,9 @@
 				} 
 				else 
 				{
-					echo '<br>'.'<br>'."Veuillez vous connecter pour cree une discution";
+					echo '<br>'.'<br>'."t'as rien a faire la !! va te connecter";
 				} ?>
+				
 		</form>
 	</body>
 </html>
