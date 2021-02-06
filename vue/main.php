@@ -27,6 +27,7 @@
                     </div>
                     <div class="description_article">
                         <p>Description : Il s'agit du célèbre jeu créé par rocktars. Sorti le 17 septembre 2013 </p>
+                        <li id='bouttonmenu'><a href=vue/list_discu.php?titre=gta>Voir discution</a></li>
                     </div>
                 </div>
             &nbsp;
@@ -37,6 +38,7 @@
                     <div class="description_article">
                         <p>Desciption : Il s'agit d'un célèbre battle royal créé par Epic games 
                         le but et simple. Etre le dernier survivant de l'ile. Sorti le 21 juillet 2017</p>
+                        <li id='bouttonmenu'><a href=vue/list_discu.php?titre=Fornite>Voir discution</a></li>
                     </div>
                 </div>
             &nbsp;
@@ -46,6 +48,7 @@
                     </div>
                     <div class="description_article">
                         <p>Desciption : Valorant est un jeu vidéo free-to-play de tir à la première personne en multijoueur développé et édité par Riot Games et sorti le 2 juin 2020. </p>
+                        <li id='bouttonmenu'><a href=vue/list_discu.php?titre=valorant>Voir discution</a></li>
                     </div>
                 </div> 
             </div>

@@ -1,12 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="../style/style.css" media="screen" type="text/css" />
+</head>
+	<body>
 <?php
-	$titre=$_POST['recherche'];
-	require('connexion.php');
-	$requete = $bdd->prepare ('SELECT DISTINCT contenu,date,titre FROM discutions where titre = ?');
+	$requete = $bdd->prepare ('SELECT contenu,date,titre,categorie 
+		FROM discutions 
+		where categorie = ? ');
 	$requete->execute(array($titre));
-	$results = $requete->fetchAll();
-	if(isset($results))
+	if(isset($requete))
 	{
-		$_SESSION['results']=$results;
-		header('Location: ../index.php');
+		foreach ($requete as $value) 
+		{
+			$discu = implode(" | ", $value);
+			echo $discu;
+		}
 	}
+	else
+	{
+		echo "Aucun  resultas trouver pour $titre";
+	}
+
 ?>
+<li id='bouttonmenu'><a href=../index.php>Retour</a></li>
+</body>
+</html>
