@@ -11,8 +11,23 @@
         <div id='totalmenu'>
             <nav id='navmenuuser'>
                 <ul id='menuuser'>
-                    <a href=#> <img src="style/avatar.png" class='avatar' alt=""></a>
-                    <?php require ('model/redirection.php');?> 
+                    <?php 
+                        require('model/userinfo.php');
+                        if(!empty($userinfo['avatar']))
+                            {
+                                ?> 
+                                <img src="avatar/<?php echo $userinfo['avatar'] ?>"/>
+                                <?php 
+                            } 
+                    else 
+                    {
+                        ?>
+                        <a href=#> <img src="style/avatar.png" class='avatar' alt=""></a>
+
+                        <?php 
+                    }
+                require ('model/redirection.php');
+                    ?> 
                 </ul>
             </nav>
 

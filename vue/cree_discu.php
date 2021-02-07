@@ -6,6 +6,7 @@
 	<body>
 		<form action="../model/new_discu.php" method="post">
         <h2>Nouvelle discution</h2>
+        <!-- list des discution disponible -->
 			<p>titre : <input type="text" name="titre" /></p>
 			<p>contenu  : <input type="text" name="contenu" /></p>
 			<p>Veuillez choisir la catégorie du jeux : <select type="text" name="categorie"></p>

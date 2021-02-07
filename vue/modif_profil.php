@@ -15,7 +15,8 @@
 			        <h2>Modifier votre mots de passe</h2>
 					<p>Ancien mots de passe: <input type="password" name="mdp" /></p>
 					<p>Nouveau mots de passe : <input type="password" name="new_mdp" /></p>
-					<p>Confirmation du nouveau mots de passe: <input type="password" name="confirme_mdp" /></p><?php 
+					<p>Confirmation du nouveau mots de passe: <input type="password" name="confirme_mdp" /></p>
+					<?php 
 						$new=$_GET['err'];
 						if($new==1)
 						{
@@ -29,15 +30,24 @@
 						{
 							echo "le mots de passe est pas identique";
 						}
+						elseif($new==4)
+						{
+							echo "avatar changer";
+						}
 						else
 						{
-							
+							echo "";
 						}
 					?>
 					<p><input type="submit" value="OK"></p>
 				</form>
-					<?php
-
+				<!--  formulaire pour changer image de profil-->
+				<form action="../model/modif_avatar.php" method="post" enctype="multipart/form-data">
+					<label>Avatar :</label>
+					<input type="file" name="Avatar">
+					<p><input type="submit" value="OK"></p>
+				</form>
+				<?php
 			}
 			else
 			{

@@ -1,4 +1,5 @@
 <?php
+require("connexion.php");
 session_start();
 $user_mdp=sha1(htmlspecialchars($_POST['mdp']));
 $new_mdp=sha1(htmlspecialchars($_POST['new_mdp']));
@@ -6,8 +7,6 @@ $confirme_mdp=sha1(htmlspecialchars($_POST['confirme_mdp']));
 $username=$_SESSION['pseudo'];
 	if($new_mdp == $confirme_mdp)
 	{
-
-		require("connexion.php");
 		$requete = $bdd->prepare ('SELECT * FROM users where pseudo = ? and mdp = ? ');
 	    $requete->execute(array($username ,$user_mdp));
 	   	$result=$requete->rowCount();
