@@ -4,7 +4,7 @@
   $categorie=htmlspecialchars($_POST['categorie']);
 
 	require('connexion.php');
-
+//ajoute une discutions
 	$sql= $bdd->prepare ('INSERT INTO discutions (titre,contenu,categorie) VALUES (?,?,?)');
   $sql->execute(array($titre, $contenu, $categorie));
   	if(isset($sql))
@@ -14,7 +14,7 @@
 		}
 		else
 		{
-			echo "erreur";
+//erreur d'ajout de discutions
 			header('Location: cree_discu.php');
 		}
  ?>

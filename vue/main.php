@@ -9,6 +9,7 @@
             <div class="main">
                 <button class="button_categorie">
                     <?php if(isset($user)) { ?>
+                        <!-- pour crée une discu si on est en ligne -->
                     <a href="vue/cree_discu.php?log=1">nouvelle discution</a> <?php }
                     else
                     { ?>
@@ -21,6 +22,7 @@
             <br>
             &nbsp;
             <div class="article">
+                <!-- list des catégories-->
                 <div class="premier_article">
                     <div class="nom_article">
                         <h2>1ère article : Grand Theft Auto</h2>

@@ -6,7 +6,7 @@
 
 	
 	require('connexion.php');
-
+//crée un nouveau utlisateur
 	$sql= $bdd->prepare ('INSERT INTO users (pseudo, email , mdp) VALUES (?,?,?)');
   	$sql->execute(array($new_user,$email,$mdp));
 

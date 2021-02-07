@@ -9,6 +9,7 @@
 			$user=$_GET['enligne'];
 			if($user == 1)
 			{
+				//formulaire de modif pour changer sont mdp
 				echo 'bonjour '.$_SESSION['pseudo'];?>
 				<form action="../model/modif_compt.php" method="post">
 			        <h2>Modifier votre mots de passe</h2>
@@ -40,6 +41,7 @@
 			}
 			else
 			{
+				//si l'utilsateur essaye de venir en etant hors-ligne
 				header('Location: ../index.php');
 			}
 		?>

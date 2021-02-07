@@ -1,4 +1,5 @@
 <?php 
+//conexion a la bdd
     $dsn ='mysql:host=localhost;dbname=forum' ;
     $db_username = 'root';
   $db_password = '';

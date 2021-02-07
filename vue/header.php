@@ -20,28 +20,7 @@
                 <a href="index.php"><img id='imgforum' src='style/forum.jpg'></a>
                 <ul id='navmenu'>
                     <li id="recherche">
-                        <input type="search" id="search" value="" onchange="ouvrirPage()">
-                        <input type="button" id="button" onclick="ouvrirPage()" value="Chercher">
-                        <script>
-                            function ouvrirPage() 
-                            {
-                                var a = document.getElementById("search").value;
 
-                                if (a === "gta") 
-                                {
-                                    $_get['a'];
-                                    header('Location: ../model/recherche_discution');
-                                }
-
-                                if (a === "le mot a marquer") {
-                                    window.open("l'id de la recherche");
-                                }
-
-                                if (a === "le mot a marquer") {
-                                    window.open("l'id de la recherche");
-                                }
-                            }
-                        </script>
                     </li>
                 </ul>
             </nav>

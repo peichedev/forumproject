@@ -16,6 +16,7 @@
         $_SESSION['pseudo']=$user;
         if(isset($user))
         {
+          // si en ligne affiche les boutons
           ?>
           <ul id='menuuer'>
             <li id='bouttonmenu'><a href=vue/modif_profil.php?enligne=1&err=0>Mon profil</a></li>
@@ -26,6 +27,7 @@
         }
         else
         {
+          //si hors ligne affiche c'est boutions
           ?>
           <ul id='menuuer'>
             <li src= 'login.php'id='bouttonmenu'><a href=vue/login.php>login </a></li>

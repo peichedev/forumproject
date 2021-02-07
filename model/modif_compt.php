@@ -17,16 +17,19 @@ $username=$_SESSION['pseudo'];
 	    		$requete2->execute(array($new_mdp,$username));
 	    		if(isset($requete2))
 	    		{
+	    			//mots de passe changer
 	    			header('Location: ../vue/modif_profil.php?enligne=1&err=1');
 	    		}
 	      	}
 	      	else
 	      	{
+	      		// mots de passe incorrecte de l'utilsateur
 	      		header('Location: ../vue/modif_profil.php?enligne=1&err=2');
 	      	}
 	}
 	else
 	{
+		// mots de passe non identique
 		header('Location: ../vue/modif_profil.php?enligne=1&err=3');
 	}
 ?>

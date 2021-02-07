@@ -5,7 +5,7 @@
 </head>
 	<body>
 <?php
-/// afiche le contenue
+/// affiche le contenue
 	$requete = $bdd->prepare ('SELECT contenu,date,titre
 		FROM discutions 
 		where categorie = ? ');
@@ -22,6 +22,7 @@
 	}
 	else
 	{
+		// aucun resultas dans la bdd
 		echo "Aucun  resultas trouver pour $titre";
 	}	
 	?>

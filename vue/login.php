@@ -6,6 +6,7 @@
     <body>
         <div id="container">           
             <form action="../model/verification.php" method="POST">
+                <!-- info pour ce log -->
                 <h1>Connexion</h1>
                 
                 <label><b>Nom d'utilisateur</b></label>
