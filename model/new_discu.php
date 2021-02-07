@@ -1,8 +1,7 @@
 <?php 
 	$titre=htmlspecialchars($_POST['titre']);
 	$contenu=htmlspecialchars($_POST['contenu']);
-  $categorie=htmlspecialchars($_POST['categorie']);
-
+  	$categorie=htmlspecialchars($_POST['categorie']);
 	require('connexion.php');
 //ajoute une discutions
 	$sql= $bdd->prepare ('INSERT INTO discutions (titre,contenu,categorie) VALUES (?,?,?)');
