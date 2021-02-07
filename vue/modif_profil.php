@@ -28,6 +28,10 @@
 						{
 							echo "le mots de passe est pas identique";
 						}
+						else
+						{
+							
+						}
 					?>
 					<p><input type="submit" value="OK"></p>
 				</form>

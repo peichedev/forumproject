@@ -18,7 +18,7 @@
         {
           ?>
           <ul id='menuuer'>
-            <li id='bouttonmenu'><a href=vue/modif_profil.php?enligne=1>Mon profil</a></li>
+            <li id='bouttonmenu'><a href=vue/modif_profil.php?enligne=1&err=0>Mon profil</a></li>
             <li id='bouttonmenu'><a href=index.php?deconnexion=true>Déconnexion</a></li>
           </ul>
           <?php 

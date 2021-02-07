@@ -21,7 +21,7 @@
 				} 
 				else 
 				{
-					echo '<br>'.'<br>'."t'as rien a faire la !! va te connecter";
+					header('Location:../index.php');
 				} ?>
 				
 		</form>
