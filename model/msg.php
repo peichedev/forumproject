@@ -39,7 +39,6 @@
 		    		}
 		    		else
 		    		{
-		    			echo "ee";
 		    		}
 	   	 		}
 	    	}
@@ -48,7 +47,7 @@
 	    	echo 'message'." : ".$value["messages"]/*.' | ecrit part : '.$value['pseudo']*/;
 	    	if($value['id_user']==$userinfo['id']||$userinfo['admin'] !=0)
 	    	{
-	    		if($value['clore']==0|| $value['admin']==1)
+	    		if($value['clore']==0 || $userinfo['admin']==1)
 	    		{
 	    		echo '<a style="padding-left:15px;" href="../model/delete_msg.php?titre='.$_GET['titre'].'&&cat='.$_GET['cat'].'&&id='.$value['id_msg'].'">delete</a><br>';
 	    		}

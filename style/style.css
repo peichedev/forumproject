@@ -108,7 +108,7 @@ button.button_footer:hover
 {
     background-image: url(https://img.freepik.com/photos-gratuite/texture-ardoise-noir-gris-fonce-haute-resolution-fond-mur-pierre-noire-naturelle_38607-306.jpg?size=626&ext=jpg&ga=GA1.2.103965662.1611532800);
 }
-/* modif profil */
+/* page modif profil */
 .formulaire_profil
 {
     width:100%;
@@ -117,7 +117,7 @@ button.button_footer:hover
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-/* ajouter discu*/
+/*page  ajouter discu*/
 .formulaire_new_discu
 {
     width:100%;
@@ -126,7 +126,7 @@ button.button_footer:hover
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
 }
-/* login*/
+/* page login*/
 .login_formulaire
 {
     width:100%;
@@ -135,7 +135,7 @@ button.button_footer:hover
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);   
 }
-/* inscription*/
+/* page inscription*/
 .inscription_formulaire
 {
     width:100%;
@@ -144,7 +144,7 @@ button.button_footer:hover
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);     
 }
-/* msg*/
+/* page msg*/
 .new_msg
 {
     width:100%;
@@ -152,6 +152,15 @@ button.button_footer:hover
     border: 1px solid #f1f1f1;
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);     
+}
+/* page ban */
+.ban_formulaire
+{
+      width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);       
 }
 /* modifier estetique des formulaire*/
 input[type=submit] {

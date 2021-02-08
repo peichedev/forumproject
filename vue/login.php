@@ -24,6 +24,11 @@
                         {
                             echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
                         }
+                        //si user est ban
+                        elseif($err==3)
+                        {
+                             echo "<p style='color:red'>Vous etes ban</p>";
+                        }
                     }
                     ?>
                     <a href='formulaire.php'>cree un compte</a>

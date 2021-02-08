@@ -11,11 +11,21 @@
       $requete = $bdd->prepare ('SELECT * FROM users where pseudo = ? and mdp = ? ');
      	$requete->execute(array($username ,$password));
     	$result=$requete->rowCount();
-      echo $result;
+      $resultes = $requete->fetchAll();
     	if($result!=0)
       	{
-       		$_SESSION['username'] = $username;
-          header('Location: ../index.php');
+          foreach ($resultes as $key => $value) 
+          {
+            if($value['ban']==0)
+            {
+              $_SESSION['username'] = $username;
+             header('Location: ../index.php');
+            }
+            else
+            {
+              header('Location: ../vue/login.php?erreur=3');
+            }
+          }
       	}
       	else
       	{

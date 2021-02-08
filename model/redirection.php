@@ -29,7 +29,7 @@ require('userinfo.php');
             if($userinfo['admin']!=0)
             {
               echo '<br>'."Vous etes un admin";
-              echo '<a style="padding-left:15px;" href="../vue/msg.php?cat='.$_GET['cat'].'&&titre='.$id_discu.'">BAN un users</a>';
+              echo '<a style="padding-left:15px;" href="vue/ban.php">BAN un users</a>';
             }
         }
         else
