@@ -144,6 +144,15 @@ button.button_footer:hover
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);     
 }
+/* msg*/
+.new_msg
+{
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);     
+}
 /* modifier estetique des formulaire*/
 input[type=submit] {
     background-color: #53af57;
