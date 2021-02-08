@@ -12,7 +12,6 @@
             <nav id='navmenuuser'>
                 <ul id='menuuser'>
                     <?php 
-                    require('model/userinfo.php');
                     if(!empty($userinfo['avatar']))
                         {
                             ?> 
@@ -31,7 +30,7 @@
             </nav>
             <nav id='navmenu'>
                 <a href="index.php"><img id='imgforum' src='style/forum.jpg'></a>
-                <ul id='navmenu'>
+                <ul id='navmenu'> 
                     <li id="recherche"></li>
                 </ul>
             </nav>            
