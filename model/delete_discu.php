@@ -9,8 +9,8 @@ $id_discu = $_GET['id'];
             $reponse = $bdd->prepare('
             	DELETE from discutions WHERE id_user = ? AND id=?');
             $reponse->execute(array($id,$id_discu));
-            $resultes = $reponse->fetchAll();
-            	if(isset($resultes))
+            
+            	if($reponse)
             	{
             		if($page ==1)
             		{
