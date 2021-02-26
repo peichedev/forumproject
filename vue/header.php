@@ -16,13 +16,13 @@
                     if(isset($userinfo['avatar']))
                         {
                             ?> 
-                            <img src="avatar/<?php echo $userinfo['avatar'] ?>"/>
+                            <img id='t'src="avatar/<?php echo $userinfo['avatar'] ?>"/>
                             <?php 
                         } 
                     else 
                     {
                     ?>
-                        <a href=#> <img src="style/avatar.png" class='avatar' alt=""></a>
+                        <a href=#> <img id='t' src="style/avatar.png" class='avatar' alt=""></a>
                     <?php 
                     }
                     require ('model/redirection.php');
