@@ -151,7 +151,22 @@ button.button_footer:hover
     padding: 30px;
     border: 1px solid #f1f1f1;
     background: #fff;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);     
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+.sujet
+{
+    background-color: #A4A4A4;
+    border: 0.75rem solid #424242;
+    text-align: center;
+}
+
+.rep_msg
+{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
 }
 /* page ban */
 .ban_formulaire
@@ -188,4 +203,23 @@ input[type=text], input[type=password],input[type=email],input[type=file] {
 #t{
    width:110px;
    clip-path:ellipse(50% 50%);
+}
+
+/*page discu*/
+
+.en_tete
+{
+    background-color: #A4A4A4;
+    border: 0.75rem solid #424242;
+}
+
+.container_discu
+{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.buttonretour
+{
+    border:  0.50rem ridge ;
 }

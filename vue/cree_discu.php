@@ -7,7 +7,7 @@
 		<div id="container"> 
 			<div class="formulaire_new_discu">
 				<form action="../model/new_discu.php" method="post">
-	    			<h2>Nouvelle discution</h2>
+	    			<h2>Nouvelle discussion</h2>
 	    			<!-- list des discution disponible -->
 					<p>titre : <input type="text" name="titre" /></p>
 					<p>contenu  : <input type="text" name="contenu" /></p>

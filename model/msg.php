@@ -35,13 +35,20 @@
 				        			<p><a href='list_discu.php?titre=<?php echo $_GET['cat']?>'>retour</a></p>
 				                </form>
 				            </div>
-				        </div> <?php 
+				        </div> 
+				        <?php 
 		    		}
 		    		else
 		    		{
 		    		}
 	   	 		}
 	    	}
+	    	?>
+	    <div class="sujet">
+			<h2>Discussion :</h2>
+		</div>
+		<div class="rep_msg">
+	    <?php
 	    foreach ($resultes as $key => $value) 
 	    {
 	    	echo 'message'." : ".$value["messages"]/*.' | ecrit part : '.$value['pseudo']*/;
@@ -64,3 +71,4 @@
 		}	    
 	}	
 ?>
+		</div>
