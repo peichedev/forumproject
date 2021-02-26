@@ -18,7 +18,7 @@
 				where id = ?');
 		    $reponse1->execute(array($id));
 		    $resultes1 = $reponse1->fetchAll();
-		    $test = true;    
+		    $test = true;
 		    		foreach ($resultes1 as $key => $value1) 
 	    		{
 		    		if($userinfo['id']!=0 && $value1['clore']==0&&$test)
@@ -30,28 +30,32 @@
 				            	 <form action="../model/ajout_msg.php?cat=<?php echo $_GET['cat'] ?>&&id= <?php echo $id ?>" method="post">
 				                    <!-- Formulaire new msg -->
 				                    <h2>Nouveau message</h2>
-				        			<p>Contenu de votre message : <input type="text" name="msg" /></p>
+				        			<p>Contenu de votre message : <textarea id="editor" name="msg" rows="7" cols="50"></textarea></p>
 				        			<p><input type="submit" value="OK"></p>
 				        			<p><a href='list_discu.php?titre=<?php echo $_GET['cat']?>'>retour</a></p>
 				                </form>
 				            </div>
-				        </div> 
-				        <?php 
+				        </div> <?php 
 		    		}
 		    		else
 		    		{
 		    		}
 	   	 		}
 	    	}
-	    	?>
-	    <div class="sujet">
-			<h2>Discussion :</h2>
-		</div>
-		<div class="rep_msg">
-	    <?php
+						require_once "../lib/JBBCode/Parser.php";
+						
+						$parser = new JBBCode\Parser();
+						$parser->addCodeDefinitionSet(new JBBCode\DefaultCodeDefinitionSet());
+						
+					
+						
+						
+						
+							
 	    foreach ($resultes as $key => $value) 
 	    {
-	    	echo 'message'." : ".$value["messages"]/*.' | ecrit part : '.$value['pseudo']*/;
+			$parser->parse($value["messages"]);
+	    	echo 'message'." : ". $parser->getAsHtml();/*.' | ecrit part : '.$value['pseudo']*/;
 	    	if($value['id_user']==$userinfo['id']||$userinfo['admin'] !=0)
 	    	{
 	    		if($value['clore']==0 || $userinfo['admin']==1)
@@ -71,4 +75,3 @@
 		}	    
 	}	
 ?>
-		</div>

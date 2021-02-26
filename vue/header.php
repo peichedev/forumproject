@@ -5,6 +5,33 @@
     <title>ForumPAD</title>
     <meta charset='utf-8'>
     <link href="<?php echo $baseurl; ?>/style/style.css" rel="stylesheet">
+    
+        <!-- Load jQuery  -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <!-- Load WysiBB JS and Theme -->
+        <script src="http://cdn.wysibb.com/js/jquery.wysibb.min.js"></script>
+        <link rel="stylesheet" href="http://cdn.wysibb.com/css/default/wbbtheme.css" />
+        <!-- Init WysiBB BBCode editor -->
+        
+        <script>
+	        $(function() {
+            var optionsWbb = {
+	   	    buttons: "bold,italic,underline,|,justifycenter,|,img,link,|,code,quote,monbouton",
+	   	    lang: "fr",
+	   	    allButtons: {
+		        monbouton: {
+		        title: 'Bouton Custom',
+		        buttonText: 'MON BOUTON',
+		        transform: { '<div class="maclasscustom">{SELTEXT}</div>':'[monbouton]{SELTEXT}[/monbouton]' }
+		        }
+		    }
+		}
+$("#editor").wysibb(optionsWbb);
+})
+</script>
+            
+
 </head>
 <body>
     <header>

@@ -8,8 +8,8 @@ if(isset($userinfo['id']))
 	 $reponse = $bdd->prepare('INSERT INTO message(messages,message.id_discution,id_user) 
 	 	VALUES (?,?,?)');
             $reponse->execute(array($msg,$id_discu,$userinfo['id']));
-            $resultes = $reponse->fetchAll();
-            if(isset($resultes))
+          
+            if($reponse)
             {
             	echo "message ajouter avec succes".'<br>';
             	echo '<a style="padding-left:15px;" href="../vue/msg.php?cat='.$_GET['cat'].'&&titre='.$id_discu.'">retour</a>';
