@@ -12,7 +12,8 @@
             <nav id='navmenuuser'>
                 <ul id='menuuser'>
                     <?php 
-                    if(!empty($userinfo['avatar']))
+                    require('model/userinfo.php');
+                    if(isset($userinfo['avatar']))
                         {
                             ?> 
                             <img src="avatar/<?php echo $userinfo['avatar'] ?>"/>

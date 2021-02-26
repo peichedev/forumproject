@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors','off');/*cache erreur */
 // info sur l'user
 session_start();
 	require('connexion.php');
