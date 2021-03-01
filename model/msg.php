@@ -42,16 +42,12 @@
 		    		}
 	   	 		}
 	    	}
-						require_once "../lib/JBBCode/Parser.php";
+	    	
+			require_once "../lib/JBBCode/Parser.php";
 						
-						$parser = new JBBCode\Parser();
-						$parser->addCodeDefinitionSet(new JBBCode\DefaultCodeDefinitionSet());
-						
+			$parser = new JBBCode\Parser();
+			$parser->addCodeDefinitionSet(new JBBCode\DefaultCodeDefinitionSet());
 					
-						
-						
-						
-							
 	    foreach ($resultes as $key => $value) 
 	    {
 			$parser->parse($value["messages"]);

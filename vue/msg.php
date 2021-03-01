@@ -1,5 +1,6 @@
 <html>
     <head>
+    	
        <meta charset="utf-8">
         <link rel="stylesheet" href="../style/style.css" media="screen" type="text/css" />
 		<!-- Load jQuery  -->
@@ -30,12 +31,17 @@ $("#editor").wysibb(optionsWbb);
 </script>
     </head>
     <body>
-		<?php 
-		ini_set('display_errors','off');/*cache erreur */
-		$id = $_GET['titre'];
-		require('../model/connexion.php');
-		require('../model/userinfo.php');
-		require('../model/msg.php');
-		?>
+    	<div class="sujet">
+    		<h2>Discussion</h2>
+    	</div>
+    	<div class="rep_msg">
+			<?php 
+			ini_set('display_errors','off');/*cache erreur */
+			$id = $_GET['titre'];
+			require('../model/connexion.php');
+			require('../model/userinfo.php');
+			require('../model/msg.php');
+			?>
+		</div>
 	</body>
 </html>
